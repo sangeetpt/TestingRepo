@@ -7,7 +7,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.infosys.kbcmovies"
+        applicationId "com.test.movies"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -63,7 +63,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0'
     // for intent mocking
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.2.0'
-    // for network testing to track idle statecom.google.android.gms:play-services-basement
     androidTestImplementation 'androidx.test.espresso.idling:idling-concurrent:3.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.2.0'
 }

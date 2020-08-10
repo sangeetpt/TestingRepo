@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.infosys.kbcmovies">
+    package="com.test.movies">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".uicomponents.ui.login.biometric.BiometricLogActivity">
+        <activity android:name="com.test.movies.uicomponents.ui.login.biometric.BiometricLogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseActivity" />
+        <activity android:name="com.test.movies.BaseActivity" />
 
-        <activity android:name=".uicomponents.MovieListActivity" />
+        <activity android:name="com.test.movies.uicomponents.MovieListActivity" />
     </application>
 
 </manifest>
